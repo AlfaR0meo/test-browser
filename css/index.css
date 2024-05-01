@@ -295,11 +295,12 @@ body {
   padding: 1em;
 }
 .browser-name {
-  font-size: var(--fs-400);
+  font-size: var(--fs-500);
+  line-height: 1.5;
 }
 .browser-name > span {
   font-weight: 700;
-    font-family: monospace;
+  font-family: monospace;
 }
 
 /*# sourceMappingURL=index.css.map */
