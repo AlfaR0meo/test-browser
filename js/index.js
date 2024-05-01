@@ -24,6 +24,10 @@ function identifyUserBrowser() {
         browserNameSpan.textContent = 'Opera';
         return 'Opera';
     }
+    if (navigatorUserAgent.includes('safari') && !navigatorUserAgent.includes('chrome')) {
+        browserNameSpan.textContent = 'Safari';
+        return 'Safari';
+    }
     
     browserNameSpan.textContent = navigator.userAgent;
 }
