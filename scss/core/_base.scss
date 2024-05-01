@@ -1,0 +1,29 @@
+/* ■■■■■ БАЗОВЫЕ СТИЛИ ■■■■■■■■■■■■■■■ */
+html,
+body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    //scrollbar-gutter: stable; // резервирование места под скроллбар при запрете прокрутки страницы
+}
+
+body {
+    font-family: var(--ff-system, sans-serif);
+    font-size: var(--fs-400, 1rem);
+    font-weight: 400;
+    line-height: 1;
+    background-color: var(--clr-bg, red);
+    color: #000000;
+
+    @supports (-webkit-tap-highlight-color: transparent) {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+.page-wrapper {
+    min-height: 100%;
+    overflow: clip;
+    background-color: var(--clr-bg, red);
+}
