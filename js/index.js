@@ -8,11 +8,7 @@ function identifyUserBrowser() {
     const navigatorUserAgent = navigator.userAgent.toLowerCase();
     console.log(navigatorUserAgent);
 
-    if (
-        navigatorUserAgent.includes('chrome') &&
-        !navigatorUserAgent.includes('edg') &&
-        !navigatorUserAgent.includes('opr')
-    ) {
+    if (navigatorUserAgent.includes('chrome') && !navigatorUserAgent.includes('edg') && !navigatorUserAgent.includes('opr')) {
         browserNameSpan.textContent = 'Chrome';
         return 'Chrome';
     }
@@ -28,5 +24,7 @@ function identifyUserBrowser() {
         browserNameSpan.textContent = 'Opera';
         return 'Opera';
     }
+    
+    browserNameSpan.textContent = navigator.userAgent;
 }
 identifyUserBrowser()
